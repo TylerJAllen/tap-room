@@ -5,6 +5,8 @@
   <li>name: {{currentKeg.name}}</li>
   <li>Brand: {{currentKeg.brand}}</li>
   <li>ABV: {{currentKeg.abv}}%</li>
-  <li>Price: ${{currentKeg.price}}</li>
-  <li>Volume: {{currentKeg.volume}} pints</li>
+  <li>Price: ${{currentKeg.price}} per pint/ ${{currentKeg.price * 5}} per pitcher</li>
+  <li>Left in keg: {{currentKeg.volume}} pints</li>
+  <button (click)="subtractVolume(masterKegList.indexOf(currentKeg), 1)">buy a pint!</button>
+  <button (click)="subtractVolume(masterKegList.indexOf(currentKeg), 5)">buy a pitcher</button>
 </ul>

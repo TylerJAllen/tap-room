@@ -5,12 +5,14 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { KegFormComponent } from './keg-form/keg-form.component';
+import { UserInterfaceComponent } from './user-interface/user-interface.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     KegFormComponent,
+    UserInterfaceComponent,
 
   ],
   imports: [

@@ -19,4 +19,9 @@ export class AppComponent {
     console.log("ping");
     console.log(this.masterKegList);
   }
+
+  subtractVolume(number, order) {
+    this.masterKegList[number].volume -= order;
+  }
+
 }
