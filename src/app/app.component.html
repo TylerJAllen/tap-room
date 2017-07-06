@@ -1,0 +1,10 @@
+<h1>Tap new keg</h1>
+<keg-form (newKegSender)="addKeg($event)"></keg-form>
+<h1>Kegs on tap:</h1>
+<ul *ngFor="let currentKeg of masterKegList">
+  <li>name: {{currentKeg.name}}</li>
+  <li>Brand: {{currentKeg.brand}}</li>
+  <li>ABV: {{currentKeg.abv}}%</li>
+  <li>Price: ${{currentKeg.price}}</li>
+  <li>Volume: {{currentKeg.volume}} pints</li>
+</ul>
